@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graceful Timelines</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+  	<div class="bg_overlay_1"></div>
+  	<div class="bg_overlay_2">
+	  <span class="bg_overlay_2_text">
+		<h1>Graceful Timelines</h1>
+		<p>The Experimental Ruby on Rails Application</p>
+	  </span>
+	</div>
+  	<%= render 'layouts/misc' %>
+  	<div class="container">
+    　<%= yield %>
+    </div>
+  </body>
+</html>
