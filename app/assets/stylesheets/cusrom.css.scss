@@ -38,7 +38,28 @@
     -o-filter:blur(0.7px);
     }
 }
+@keyframes FadeIn_3 {
+  0% {
+    color:#ff0000;
+    opacity:0;
+    filter:blur(10px);
+    -ms-filter:blur(10px);
+    -moz-filter:blur(10px);
+    -webkit-filter:blur(10px);
+    -o-filter:blur(10px);
+    }
+  100% {
+    color:#AAAAAA;
+    opacity:0.3;
+    filter:blur(0px);
+    -ms-filter:blur(0px);
+    -moz-filter:blur(0px);
+    -webkit-filter:blur(0px);
+    -o-filter:blur(0px);
+    }
+}
 body{
+  margin: 0;
   background: #000000;
 }
 .bg_video{
@@ -92,19 +113,15 @@ body{
   vertical-align: middle;
   animation: FadeIn_2 5s ease 0.1s forwards;
 }
-.timeline_overlay{
+.message{
   z-index: 3;
-  opacity: 0.3;
-  top: 10%;
+  opacity: 0;
   left: 10%;
   width: 80%;
-  height: 80%;
-  position: fixed !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative !important;
+  color: #AAAAAA;
   background: #000000;
-}
-.container{
-  
-}
-.timeline{
-
+  animation: FadeIn_1 5s ease 5s forwards;
 }

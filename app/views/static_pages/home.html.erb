@@ -1,3 +1,7 @@
-<div class="timeline_overlay">
-	
-</div>
+<% @timelines.each do |timeline|%>
+	<div class="message">
+		Date: <%= timeline.posted_date %><br>
+		Posted to <%= timeline.sns_name %><br>
+		<%= timeline.message %><br>
+	</div>
+<% end %>
